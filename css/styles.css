@@ -30,6 +30,8 @@ body {
    line-height: var(--line-height);
    /* Sets the line-height to 1.6 */
    background-color: var(--lightblue);
+   min-height: 90%;
+   margin-bottom: 100px;
 }
 
 header {
@@ -51,11 +53,12 @@ h1 {
    font-weight: var(--font-weight-large);
    line-height: var(--line-height);
    color: var(--ocean);
+   text-align: center;
 }
 
 h2 {
    margin: auto;
-   font-weight: var(--font-weight-large);
+   font-weight: var(--font-weight);
    line-height: var(--line-height);
    color: var(--ocean);
 }
@@ -78,15 +81,9 @@ form {
    color: var(--ocean);
 }
 
-table, th, td {
-   font-weight: var(--font-weight-large);
-   line-height: var(--line-height);
-   border: 1px solid;
-   color: var(--ocean);
-}
-
 main {
    padding: 30px;
+   display: block;
 }
 
 a {
@@ -140,22 +137,34 @@ button:hover, button:focus, .button:hover, .button:focus {
    opacity: 0.8;
 }
 
+button {
+   float: under;
+}
+
 .navigation-list__item--active {
    text-decoration: none;
 }
 
 table {
    margin: auto;
+   float: left;
    width: 300px;
    height: 300px;
 }
 
 .profile__portrait {
    float: left;
-   width: 250px;
+   display: block;
+   width: 225px;
    margin-right: 40px;
    height: auto;
    border-radius: 50%;
+}
+
+.profile__item {
+   margin: 5%;
+   -webkit-box-alighn: center;
+   align-items: center;
 }
 
 .page-footer {
@@ -163,6 +172,19 @@ table {
    display: flex;
    flex-direction: column;
    text-align: center;
+   -webkit-box-orient: vertical;
+   -webkit-box-direction: normal;
+   flex-direction: column;
+   width: 100%;
+   margin: 0;
+   position: fixed;
+   bottom: 0;
+   border-top: 1px solid white; 
+   background-color: var(--whiteblue);
+}
+
+footer {
+   display: block;
 }
 
 .profile {
@@ -187,20 +209,57 @@ table {
 
 .page-header {
    display: flex;
+   padding: 3px;
+   border-bottom: 1px solid #F5F5F5;
    width: 100%;
-   padding: 20px;
+   max-width: 100%;
+   background-size: cover;
+   flex-wrap: wrap;
+}
+
+.page-header__item:first-child {
+   width: 125px;
+   height: 125px;
+   padding: 1%;
 }
 
 .page-header__item {
+   -webkit-box-flex: 0;
    flex: 0 1 100px;
-   width: 100px;
-   margin-right: 40px;
-   height: auto;
 }
 
 .page-header__item:last-child {
+   -webkit-box-flex: 1;
    flex-grow: 1;
    text-align: right;
+}
+
+.standard-label {
+   display: block;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   width: 100%;
+}
+
+.standard-label--input, textarea {
+   display: block;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   width: 100%;
+}
+
+
+input {
+   writing-mode: horizontal-tb;
+   text-rendering: auto;
+   color: fieldtext;
+   letter-spacing: normal;
+   word-spacing: normal;
+   text-indent: 0px;
+   appearance: auto;
+   cursor: text;
+   border-width: 2px;
+   border-style: inset;
 }
 
 .grid {
