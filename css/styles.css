@@ -137,10 +137,6 @@ button:hover, button:focus, .button:hover, .button:focus {
    opacity: 0.8;
 }
 
-button {
-   float: under;
-}
-
 .navigation-list__item--active {
    text-decoration: none;
 }
@@ -163,7 +159,6 @@ table {
 
 .profile__item {
    margin: 5%;
-   -webkit-box-alighn: center;
    align-items: center;
 }
 
@@ -172,8 +167,6 @@ table {
    display: flex;
    flex-direction: column;
    text-align: center;
-   -webkit-box-orient: vertical;
-   -webkit-box-direction: normal;
    flex-direction: column;
    width: 100%;
    margin: 0;
@@ -224,12 +217,10 @@ footer {
 }
 
 .page-header__item {
-   -webkit-box-flex: 0;
    flex: 0 1 100px;
 }
 
 .page-header__item:last-child {
-   -webkit-box-flex: 1;
    flex-grow: 1;
    text-align: right;
 }

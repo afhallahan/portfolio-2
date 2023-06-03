@@ -20,6 +20,8 @@ Secondary Color (white/blue): #E2F0F0;
    line-height: 1.6;
    /* Sets the line-height to 1.6 */
    background-color: #CDEDEE;
+   min-height: 90%;
+   margin-bottom: 100px;
 }
 
 header {
@@ -41,11 +43,12 @@ h1 {
    font-weight: 700;
    line-height: 1.6;
    color: #007477;
+   text-align: center;
 }
 
 h2 {
    margin: auto;
-   font-weight: 700;
+   font-weight: 400;
    line-height: 1.6;
    color: #007477;
 }
@@ -68,32 +71,9 @@ form {
    color: #007477;
 }
 
-
-table {
-   font-weight: 700;
-   line-height: 1.6;
-   border: 1px solid;
-   color: #007477;
-}
-
-
-th {
-   font-weight: 700;
-   line-height: 1.6;
-   border: 1px solid;
-   color: #007477;
-}
-
-
-td {
-   font-weight: 700;
-   line-height: 1.6;
-   border: 1px solid;
-   color: #007477;
-}
-
 main {
    padding: 30px;
+   display: block;
 }
 
 a {
@@ -171,10 +151,6 @@ button:hover, button:focus, .button:hover, .button:focus {
    opacity: 0.8;
 }
 
-button {
-   float: under;
-}
-
 .navigation-list__item--active {
    text-decoration: none;
 }
@@ -188,10 +164,18 @@ table {
 
 .profile__portrait {
    float: left;
-   width: 250px;
+   display: block;
+   width: 225px;
    margin-right: 40px;
    height: auto;
    border-radius: 50%;
+}
+
+.profile__item {
+   margin: 5%;
+   -webkit-box-align: center;
+       -ms-flex-align: center;
+           align-items: center;
 }
 
 .page-footer {
@@ -204,6 +188,17 @@ table {
        -ms-flex-direction: column;
            flex-direction: column;
    text-align: center;
+   flex-direction: column;
+   width: 100%;
+   margin: 0;
+   position: fixed;
+   bottom: 0;
+   border-top: 1px solid white; 
+   background-color: #E2F0F0;
+}
+
+footer {
+   display: block;
 }
 
 .profile {
@@ -231,17 +226,25 @@ table {
    display: -webkit-box;
    display: -ms-flexbox;
    display: flex;
+   padding: 3px;
+   border-bottom: 1px solid #F5F5F5;
    width: 100%;
-   padding: 20px;
+   max-width: 100%;
+   background-size: cover;
+   -ms-flex-wrap: wrap;
+       flex-wrap: wrap;
+}
+
+.page-header__item:first-child {
+   width: 125px;
+   height: 125px;
+   padding: 1%;
 }
 
 .page-header__item {
    -webkit-box-flex: 0;
        -ms-flex: 0 1 100px;
            flex: 0 1 100px;
-   width: 100px;
-   margin-right: 40px;
-   height: auto;
 }
 
 .page-header__item:last-child {
@@ -249,6 +252,38 @@ table {
        -ms-flex-positive: 1;
            flex-grow: 1;
    text-align: right;
+}
+
+.standard-label {
+   display: block;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   width: 100%;
+}
+
+.standard-label--input, textarea {
+   display: block;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   width: 100%;
+}
+
+
+input {
+   -webkit-writing-mode: horizontal-tb;
+       -ms-writing-mode: lr-tb;
+           writing-mode: horizontal-tb;
+   text-rendering: auto;
+   color: fieldtext;
+   letter-spacing: normal;
+   word-spacing: normal;
+   text-indent: 0px;
+   -webkit-appearance: auto;
+      -moz-appearance: auto;
+           appearance: auto;
+   cursor: text;
+   border-width: 2px;
+   border-style: inset;
 }
 
 .grid {
