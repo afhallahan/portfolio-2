@@ -172,12 +172,14 @@ table {
    margin: 0;
    position: fixed;
    bottom: 0;
-   border-top: 1px solid white; 
+   border-top: 1px solid white;
    background-color: var(--whiteblue);
 }
 
 footer {
    display: block;
+   left: 0;
+   right: 0;
 }
 
 .profile {

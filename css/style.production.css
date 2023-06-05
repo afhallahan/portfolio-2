@@ -2,7 +2,7 @@
 * Prefixed by https://autoprefixer.github.io
 * PostCSS: v8.4.14,
 * Autoprefixer: v10.4.7
-* Browsers: last 2 version
+* Browsers: last 4 version
 */
 
 /*
@@ -97,6 +97,7 @@ a:hover, a:focus {
    /* reduces the opacity of the button to 80% */
    opacity: 0.8;
    -webkit-transform: translateY(10px);
+       -ms-transform: translateY(10px);
            transform: translateY(10px);
 }
 
@@ -120,8 +121,10 @@ button {
    /* gives the button a bottom border with a wideth of 2p x, a type of solid, and a color in RGBA format */
    border-bottom: 2px solid #002c26;
    -webkit-transition-duration: 0.2s;
+        -o-transition-duration: 0.2s;
            transition-duration: 0.2s;
    -webkit-transition-property: opacity;
+   -o-transition-property: opacity;
    transition-property: opacity;
 }
 
@@ -141,8 +144,10 @@ button {
    /* gives the button a bottom border with a wideth of 2p x, a type of solid, and a color in RGBA format */
    border-bottom: 2px solid #002c26;
    -webkit-transition-duration: 0.2s;
+        -o-transition-duration: 0.2s;
            transition-duration: 0.2s;
    -webkit-transition-property: opacity;
+   -o-transition-property: opacity;
    transition-property: opacity;
 }
 
@@ -193,12 +198,14 @@ table {
    margin: 0;
    position: fixed;
    bottom: 0;
-   border-top: 1px solid white; 
+   border-top: 1px solid white;
    background-color: #E2F0F0;
 }
 
 footer {
    display: block;
+   left: 0;
+   right: 0;
 }
 
 .profile {
@@ -299,11 +306,11 @@ input {
 }
 
 .grid__item:last-child {
-   --grid-column: 3;
+   -ms-grid-column: 3;
        grid-column-start: 3;
    -ms-grid-column-span: 0;
    grid-column-end: 3;
-   --grid-row: 1;
+   -ms-grid-row: 1;
        grid-row-start: 1;
    -ms-grid-row-span: 2;
    grid-row-end: 3;
