@@ -228,20 +228,30 @@ footer {
    text-align: right;
 }
 
-.standard-label {
+.div__contact-form {
+   padding: 40px 20px;
+   text-align: left;
+   margin: 0 auto;
+   max-width: 700px;
+}
+
+.div__contact-form, textarea {
    display: block;
    margin-top: 10px;
    margin-bottom: 10px;
    width: 100%;
 }
 
-.standard-label--input, textarea {
+.div__contact-form--input {
+   display: block;
+}
+
+.div__contact-form--input textarea {
    display: block;
    margin-top: 10px;
    margin-bottom: 10px;
    width: 100%;
 }
-
 
 input {
    writing-mode: horizontal-tb;

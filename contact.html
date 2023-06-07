@@ -64,14 +64,15 @@
       <h1>Contact Me</h1>
       <div>
         <br />
-        <form method="post" id="contact-form">
-          <label class="standard-label" for="contact-email" required>E-mail*: </label>
+        <div class="div__contact-form">
+        <form method="post" id="contact-form" action-method="post">
+          <label class="div__contact-form--input" for="contact-email" required>E-mail*: </label>
           <input type="email" id="contact-email" required /><br /><br />
-          <label class="standard-label" for="telephone">Telephone: </label>
+          <label class="div__contact-form--input" for="telephone">Telephone: </label>
           <input type="tel" id="telephone" pattern="\d{3}[\-]\d{3}[\-]\d{4}" />
           <br />
           <br />
-          <label class="standard-label" for="my-input">Message: </label>
+          <label class="div__contact-form--input" for="my-input">Message: </label>
           <textarea
             maxlength="240"
             id="my-input"
@@ -80,6 +81,7 @@
           ></textarea>
           <button type="button">Send Message</button>
         </form>
+        </div>
         <br />
         <a href="tel:+18125685496">Call Me</a><br />
         <a href="mailto:allyson.hallahan@gmail.com">Email Me</a><br />
