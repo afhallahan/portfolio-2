@@ -267,15 +267,15 @@ input {
    background-color: var(--whiteblue);
    padding: 30px;
    border-radius: 5px;
-   border: 3px solid white;
-   box-shadow: 1px;
+   border: 10px solid white;
+   box-shadow: 10px;
 }
 
 .grid__item:last-child {
    grid-column-start: 3;
    grid-column-end: 3;
    grid-row-start: 1;
-   grid-row-end: 3;
+   grid-row-end: 1;
 }
 
 .berlin-illustration {
