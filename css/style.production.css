@@ -12,7 +12,7 @@ Primary Color (light blue): #CDEDEE;
 Secondary Color (white/blue): #E2F0F0;
  */
 
- body {
+body {
    font-family: 'Lato', sans-serif;
    font-weight: 400;
    font-size: 14px;
@@ -97,8 +97,8 @@ a:hover, a:focus {
    /* reduces the opacity of the button to 80% */
    opacity: 0.8;
    -webkit-transform: translateY(10px);
-       -ms-transform: translateY(10px);
-           transform: translateY(10px);
+   -ms-transform: translateY(10px);
+   transform: translateY(10px);
 }
 
 input, texture, select, button {
@@ -121,8 +121,8 @@ button {
    /* gives the button a bottom border with a wideth of 2p x, a type of solid, and a color in RGBA format */
    border-bottom: 2px solid #002c26;
    -webkit-transition-duration: 0.2s;
-        -o-transition-duration: 0.2s;
-           transition-duration: 0.2s;
+   -o-transition-duration: 0.2s;
+   transition-duration: 0.2s;
    -webkit-transition-property: opacity;
    -o-transition-property: opacity;
    transition-property: opacity;
@@ -144,8 +144,8 @@ button {
    /* gives the button a bottom border with a wideth of 2p x, a type of solid, and a color in RGBA format */
    border-bottom: 2px solid #002c26;
    -webkit-transition-duration: 0.2s;
-        -o-transition-duration: 0.2s;
-           transition-duration: 0.2s;
+   -o-transition-duration: 0.2s;
+   transition-duration: 0.2s;
    -webkit-transition-property: opacity;
    -o-transition-property: opacity;
    transition-property: opacity;
@@ -179,8 +179,8 @@ table {
 .profile__item {
    margin: 5%;
    -webkit-box-align: center;
-       -ms-flex-align: center;
-           align-items: center;
+   -ms-flex-align: center;
+   align-items: center;
 }
 
 .page-footer {
@@ -190,8 +190,8 @@ table {
    display: flex;
    -webkit-box-orient: vertical;
    -webkit-box-direction: normal;
-       -ms-flex-direction: column;
-           flex-direction: column;
+   -ms-flex-direction: column;
+   flex-direction: column;
    text-align: center;
    flex-direction: column;
    width: 100%;
@@ -226,7 +226,7 @@ footer {
 
 * {
    -webkit-box-sizing: border-box;
-           box-sizing: border-box;
+   box-sizing: border-box;
 }
 
 .page-header {
@@ -239,7 +239,7 @@ footer {
    max-width: 100%;
    background-size: cover;
    -ms-flex-wrap: wrap;
-       flex-wrap: wrap;
+   flex-wrap: wrap;
 }
 
 .page-header__item:first-child {
@@ -250,14 +250,14 @@ footer {
 
 .page-header__item {
    -webkit-box-flex: 0;
-       -ms-flex: 0 1 100px;
-           flex: 0 1 100px;
+   -ms-flex: 0 1 100px;
+   flex: 0 1 100px;
 }
 
 .page-header__item:last-child {
    -webkit-box-flex: 1;
-       -ms-flex-positive: 1;
-           flex-grow: 1;
+   -ms-flex-positive: 1;
+   flex-grow: 1;
    text-align: right;
 }
 
@@ -278,16 +278,16 @@ footer {
 
 input {
    -webkit-writing-mode: horizontal-tb;
-       -ms-writing-mode: lr-tb;
-           writing-mode: horizontal-tb;
+   -ms-writing-mode: lr-tb;
+   writing-mode: horizontal-tb;
    text-rendering: auto;
    color: fieldtext;
    letter-spacing: normal;
    word-spacing: normal;
    text-indent: 0px;
    -webkit-appearance: auto;
-      -moz-appearance: auto;
-           appearance: auto;
+   -moz-appearance: auto;
+   appearance: auto;
    cursor: text;
    border-width: 2px;
    border-style: inset;
@@ -307,11 +307,11 @@ input {
 
 .grid__item:last-child {
    --grid-column: 3;
-       grid-column-start: 3;
+   grid-column-start: 3;
    -ms-grid-column-span: 0;
    grid-column-end: 3;
    --grid-row: 1;
-       grid-row-start: 1;
+   grid-row-start: 1;
    -ms-grid-row-span: 2;
    grid-row-end: 3;
 }
@@ -385,63 +385,63 @@ input {
 
 .sun {
    -webkit-animation: 4s color-change infinite alternate linear;
-           animation: 4s color-change infinite alternate linear;
+   animation: 4s color-change infinite alternate linear;
 }
 
 @-webkit-keyframes cloud-move {
    from {
       -webkit-transform: translate(0, 50px);
-              transform: translate(0, 50px);
+      transform: translate(0, 50px);
    }
 
    to {
       -webkit-transform: translate(200px, 50px);
-              transform: translate(200px, 50px);
+      transform: translate(200px, 50px);
    }
 }
 
 @keyframes cloud-move {
    from {
       -webkit-transform: translate(0, 50px);
-              transform: translate(0, 50px);
+      transform: translate(0, 50px);
    }
 
    to {
       -webkit-transform: translate(200px, 50px);
-              transform: translate(200px, 50px);
+      transform: translate(200px, 50px);
    }
 }
 
 @-webkit-keyframes cloud-move-reverse {
    from {
       -webkit-transform: translate(446px, 48px);
-              transform: translate(446px, 48px);
+      transform: translate(446px, 48px);
    }
 
    to {
       -webkit-transform: translate(100px, 48px);
-              transform: translate(100px, 48px);
+      transform: translate(100px, 48px);
    }
 }
 
 @keyframes cloud-move-reverse {
    from {
       -webkit-transform: translate(446px, 48px);
-              transform: translate(446px, 48px);
+      transform: translate(446px, 48px);
    }
 
    to {
       -webkit-transform: translate(100px, 48px);
-              transform: translate(100px, 48px);
+      transform: translate(100px, 48px);
    }
 }
 
 .cloud-front {
    -webkit-animation: 30s cloud-move infinite alternate linear;
-           animation: 30s cloud-move infinite alternate linear;
+   animation: 30s cloud-move infinite alternate linear;
 }
 
 .cloud-back {
    -webkit-animation: 34s cloud-move-reverse infinite alternate linear;
-           animation: 34s cloud-move-reverse infinite alternate linear;
+   animation: 34s cloud-move-reverse infinite alternate linear;
 }
