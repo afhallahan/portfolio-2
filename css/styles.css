@@ -195,7 +195,7 @@ footer {
 
 .navigation-list li {
    display: inline-block;
-   margin-left: 15px;
+   margin-left: 20px;
 }
 
 * {
@@ -213,14 +213,11 @@ footer {
 }
 
 
-.page-header__item:first-child {
-   width: 125px;
-   height: 125px;
-   padding: 0px;
-}
-
 .page-header__item {
-   flex: 0 1 50px;
+   width: 150px;
+   height: 150px;
+   padding: 0px;
+   flex: 0 1 20px;
 }
 
 .page-header__item:last-child {
