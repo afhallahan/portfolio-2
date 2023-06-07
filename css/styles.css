@@ -204,7 +204,7 @@ footer {
 
 .page-header {
    display: flex;
-   padding: 3px;
+   padding: 0px;
    border-bottom: 1px solid #F5F5F5;
    width: 100%;
    max-width: 100%;
@@ -212,14 +212,15 @@ footer {
    flex-wrap: wrap;
 }
 
+
 .page-header__item:first-child {
    width: 125px;
    height: 125px;
-   padding: 1%;
+   padding: 0px;
 }
 
 .page-header__item {
-   flex: 0 1 100px;
+   flex: 0 1 50px;
 }
 
 .page-header__item:last-child {
@@ -264,6 +265,10 @@ input {
 
 .grid__item {
    background-color: var(--whiteblue);
+   padding: 30px;
+   border-radius: 5px;
+   border: 3px solid white;
+   box-shadow: 1px;
 }
 
 .grid__item:last-child {
