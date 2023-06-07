@@ -72,12 +72,14 @@
           <input type="tel" id="telephone" pattern="\d{3}[\-]\d{3}[\-]\d{4}" />
           <br />
           <br />
-          <label class="div__contact-form--input" for="my-input">Message: </label>
-          <textarea
+          <label class="div__contact-form--input" for="message">Message: </label>
+          <textarea name="message"
             maxlength="240"
-            id="my-input"
+            id="message"
             cols="30"
             rows="10"
+            required placeholder="Enter message here"
+            class="div__contact-form--input"
           ></textarea>
           <button type="button">Send Message</button>
         </form>
