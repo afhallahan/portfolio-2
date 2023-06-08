@@ -61,6 +61,7 @@ h2 {
    font-weight: var(--font-weight);
    line-height: var(--line-height);
    color: var(--ocean);
+   padding: 30px;
 }
 
 h3 {
@@ -82,10 +83,15 @@ form {
 }
 
 main {
-   padding: 30px;
+   padding: 20x;
    display: block;
 }
 
+.contact {
+   font-family: var(--font-family);
+   font-weight: var(--font-size);
+   padding: 20px;
+}
 a {
    font-family: var(--font-family);
    text-align: center;
@@ -130,7 +136,33 @@ button, .button {
    border-bottom: 2px solid var(--black);
    transition-duration: 0.2s;
    transition-property: opacity;
+   margin-left: 30px;
 }
+
+.button-button {
+   /* overwrites browser defaults and resets the border */
+   border: none;
+   display: inline-block;
+   /*takes the font from the outer container */
+   font-family: inherit;
+   /* styles the background color, font color, and text decoration (underline, etc.) of the button */
+   background-color: #007477;
+   color: #F2F3F3;
+   text-decoration: none;
+   /* adds spacing to the button (this will be discussed more in-depth later */
+   padding: 5px;
+   border-radius: 3px;
+   /* gives the button a bottom border with a wideth of 2p x, a type of solid, and a color in RGBA format */
+   border-bottom: 2px solid #002c26;
+   -webkit-transition-duration: 0.2s;
+   -o-transition-duration: 0.2s;
+   transition-duration: 0.2s;
+   -webkit-transition-property: opacity;
+   -o-transition-property: opacity;
+   transition-property: opacity;
+   margin-left: 5px;
+  }
+
 
 button:hover, button:focus, .button:hover, .button:focus {
    cursor: pointer;
@@ -187,50 +219,53 @@ footer {
    margin: 0 auto;
 }
 
-.navigation-list {
-   display: inline-block;
-   list-style-type: none;
-   top: 0;
-   margin-right: 50px;
-   align-items: center;
-   width: 100%;
-}
-
-.navigation-list li {
-   display: inline-block;
-   padding: 10px 10px;
-}
 
 * {
    box-sizing: border-box;
 }
 
-.page-header {
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
+nav li{
+   display: inline-block;
+   padding: 10px 10px;
+}
 
-   border-bottom: 1px solid #F5F5F5;
+header {
+   display: flex;
+   border-bottom: 1px solid white;
    width: 100%;
-   max-width: 100%;
-   background-size: cover;
-   flex-wrap: wrap;
-   top: 0;
-   left: 0;
-   right: 0;
 }
 
 .page-header__item {
+   flex: 2 1 200px;
+}
+
+img.page-header__item {
    width: 150px;
    height: 150px;
-   flex: 0 1 20px;
-   margin-left: 10px;
-   margin-top: 10px;
+   margin-top: 5px;
+   margin-left: 5px;
 }
 
 .page-header__item:last-child {
    flex-grow: 1;
    text-align: right;
+}
+
+ul.navigation-list {
+   margin-right: 3%;
+}
+
+.navigation-list, .skills-list {
+   list-style-type: none;
+}
+
+ul {
+   display: block;
+   margin-block-start: 1em;
+   margin-block-end: 1em;
+   margin-inline-start: 0px;
+   margin-inline-end: 0px;
+   padding-inline-start: 40px;
 }
 
 .div__contact-form {
