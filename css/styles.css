@@ -189,13 +189,16 @@ footer {
 
 .navigation-list {
    display: inline-block;
-   text-align: left;
    list-style-type: none;
+   top: 0;
+   margin-right: 50px;
+   align-items: center;
+   width: 100%;
 }
 
 .navigation-list li {
    display: inline-block;
-   margin-left: 20px;
+   padding: 10px 10px;
 }
 
 * {
@@ -204,20 +207,25 @@ footer {
 
 .page-header {
    display: flex;
-   padding: 0px;
+   align-items: center;
+   justify-content: space-between;
+
    border-bottom: 1px solid #F5F5F5;
    width: 100%;
    max-width: 100%;
    background-size: cover;
    flex-wrap: wrap;
+   top: 0;
+   left: 0;
+   right: 0;
 }
-
 
 .page-header__item {
    width: 150px;
    height: 150px;
-   padding: 0px;
    flex: 0 1 20px;
+   margin-left: 10px;
+   margin-top: 10px;
 }
 
 .page-header__item:last-child {
