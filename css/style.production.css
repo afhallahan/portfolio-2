@@ -151,28 +151,6 @@ button {
    transition-property: opacity;
 }
 
-.button_button {
- /* overwrites browser defaults and resets the border */
- border: none;
- display: inline-block;
- /*takes the font from the outer container */
- font-family: inherit;
- /* styles the background color, font color, and text decoration (underline, etc.) of the button */
- background-color: #007477;
- color: #F2F3F3;
- text-decoration: none;
- /* adds spacing to the button (this will be discussed more in-depth later */
- padding: 20px;
- border-radius: 3px;
- /* gives the button a bottom border with a wideth of 2p x, a type of solid, and a color in RGBA format */
- border-bottom: 2px solid #002c26;
- -webkit-transition-duration: 0.2s;
- -o-transition-duration: 0.2s;
- transition-duration: 0.2s;
- -webkit-transition-property: opacity;
- -o-transition-property: opacity;
- transition-property: opacity;
-}
 
 button:hover, button:focus, .button:hover, .button:focus {
    cursor: pointer;
