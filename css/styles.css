@@ -285,6 +285,7 @@ ul {
 
 .div__contact-form--input {
    display: block;
+   font-size: var(--font-size-large);
 }
 
 .div__contact-form--input textarea {
