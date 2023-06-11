@@ -67,9 +67,10 @@
         <div class="div__contact-form">
         <form method="post" id="contact-form" action-method="post">
           <label class="div__contact-form--input" for="contact-email" required>E-mail*: </label>
-          <input type="email" id="contact-email" required /><br /><br />
-          <label class="div__contact-form--input" for="telephone">Telephone: </label>
-          <input type="tel" id="telephone" pattern="\d{3}[\-]\d{3}[\-]\d{4}" />
+          <textarea name="email" cols="1" rows="1"></textarea>
+          <br /><br />
+          <label class="div__contact-form--input" for="telephone" pattern="\d{3}[\-]\d{3}[\-]\d{4}">Telephone: </label>
+          <textarea name="phone" cols="1" rows="1"></textarea>
           <br />
           <br />
           <label class="div__contact-form--input" for="message">Message: </label>

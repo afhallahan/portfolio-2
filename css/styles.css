@@ -136,7 +136,7 @@ button, .button {
    border-bottom: 2px solid var(--black);
    transition-duration: 0.2s;
    transition-property: opacity;
-   margin-left: 30px;
+   margin-left: 275px;
 }
 
 .button-button {
@@ -160,7 +160,7 @@ button, .button {
    -webkit-transition-property: opacity;
    -o-transition-property: opacity;
    transition-property: opacity;
-   margin-left: 5px;
+   margin: center;
   }
 
 
@@ -278,8 +278,8 @@ ul {
 
 .div__contact-form, textarea {
    display: block;
-   margin-top: 10px;
-   margin-bottom: 10px;
+   margin-top: 5px;
+   margin-bottom: 1px;
    width: 100%;
 }
 
@@ -288,14 +288,7 @@ ul {
    font-size: var(--font-size-large);
 }
 
-.div__contact-form--input textarea {
-   display: block;
-   margin-top: 10px;
-   margin-bottom: 10px;
-   width: 100%;
-}
-
-input {
+textarea {
    writing-mode: horizontal-tb;
    text-rendering: auto;
    color: fieldtext;
