@@ -83,7 +83,6 @@ form {
 }
 
 main {
-   padding: 20x;
    display: block;
 }
 
@@ -259,7 +258,8 @@ header {
 }
 
 .page-header__item {
-   flex: 2 1 200px;
+   box-flex: 0;
+   flex: 0 1 20px;
 }
 
 img.page-header__item {
@@ -275,7 +275,7 @@ img.page-header__item {
 }
 
 ul.navigation-list {
-   margin-right: 3%;
+   margin-right: 20px;
 }
 
 .navigation-list, .skills-list {
