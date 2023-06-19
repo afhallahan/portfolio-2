@@ -331,6 +331,20 @@ textarea {
 
 }
 
+.contact {
+   display: inline-block;
+   padding: 10px 20px;
+   background-color: #333;
+   color: #fff;
+   text-decoration: none;
+   margin-top: 10px;
+   margin-right: 10px;
+}
+
+.contact:first-child {
+   margin-left: 10px;
+}
+
 @media all and (max-width: 500px) {
    .grid {
       grid-template-columns: 1fr;
