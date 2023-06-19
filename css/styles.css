@@ -134,8 +134,6 @@ button, .button {
    border-radius: 3px;
    /* gives the button a bottom border with a wideth of 2p x, a type of solid, and a color in RGBA format */
    border-bottom: 2px solid var(--black);
-   transition-duration: 0.2s;
-   transition-property: opacity;
    margin-left: 275px;
 }
 
@@ -154,12 +152,6 @@ button, .button {
    border-radius: 3px;
    /* gives the button a bottom border with a wideth of 2p x, a type of solid, and a color in RGBA format */
    border-bottom: 2px solid #002c26;
-   -webkit-transition-duration: 0.2s;
-   -o-transition-duration: 0.2s;
-   transition-duration: 0.2s;
-   -webkit-transition-property: opacity;
-   -o-transition-property: opacity;
-   transition-property: opacity;
    margin: center;
   }
 
