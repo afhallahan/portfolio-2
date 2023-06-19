@@ -27,7 +27,7 @@
             alt="logo"
             class="page-header__item"
           />
-          </a>
+        </a>
         <nav class="main-navigation page-header__item">
           <ul role="menubar" class="navigation-list">
             <li role="presentation">
@@ -65,32 +65,44 @@
       <div>
         <br />
         <div class="div__contact-form">
-        <form method="post" id="contact-form" action-method="post">
-          <label class="div__contact-form--input" for="contact-email" required>E-mail*: </label>
-          <textarea name="email" cols="2" rows="1"></textarea>
-          <br /><br />
-          <label class="div__contact-form--input" for="telephone" pattern="\d{3}[\-]\d{3}[\-]\d{4}">Telephone: </label>
-          <textarea name="phone" cols="1" rows="1"></textarea>
-          <br />
-          <br />
-          <div class="div__contact-form--input">
-          <label for="message">Message: </label>
-          <textarea name="message"
-            maxlength="240"
-            id="message"
-            cols="30"
-            rows="10"
-            required placeholder="Enter message here"
-          ></textarea>
-          </div>
-          <div class="div__contact-form--input">
-          <button type="button">Send Message</button>
-          </div>
-        </form>
+          <form method="post" id="contact-form" action-method="post">
+            <label class="div__contact-form--input" for="contact-email" required
+              >E-mail*:
+            </label>
+            <textarea name="email" cols="2" rows="1"></textarea>
+            <br /><br />
+            <label
+              class="div__contact-form--input"
+              for="telephone"
+              pattern="\d{3}[\-]\d{3}[\-]\d{4}"
+              >Telephone:
+            </label>
+            <textarea name="phone" cols="1" rows="1"></textarea>
+            <br />
+            <br />
+            <div class="div__contact-form--input">
+              <label for="message">Message: </label>
+              <textarea
+                name="message"
+                maxlength="240"
+                id="message"
+                cols="30"
+                rows="10"
+                required
+                placeholder="Enter message here"
+              ></textarea>
+            </div>
+            <div class="div__contact-form--input">
+              <button type="button" class="contact-page-button">
+                Send Message
+              </button>
+            </div>
+          </form>
         </div>
         <br />
         <a href="tel:+18125685496" class="contact">Call Me</a><br />
-        <a href="mailto:allyson.hallahan@gmail.com" class="contact">Email Me</a><br />
+        <a href="mailto:allyson.hallahan@gmail.com" class="contact">Email Me</a
+        ><br />
       </div>
 
       <footer class="page-footer">
