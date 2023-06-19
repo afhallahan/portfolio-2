@@ -168,6 +168,7 @@ button, .button {
      transition-duration: 0.2s;
      transition-property: opacity;
      padding: 10px;
+     margin-left: 515px;
      justify-content: center;
      align-items: center;
      margin-top: 10px;
