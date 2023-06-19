@@ -110,8 +110,7 @@ a:hover, a:focus {
    /* lets the mouse appear as a hand when hovering over the button */
    cursor: pointer;
    /* reduces the opacity of the button to 80% */
-   opacity: 0.8;
-   transform: translateY(10px);
+   opacity: 0.8;;
 }
 
 input, texture, select, button {
@@ -155,7 +154,6 @@ button, .button {
   }
 
 .about-page-button {
-   margin-left: 30px;
      /* overwrites browser defaults and resets the border */
      border: none;
      display: inline-block;
@@ -166,12 +164,14 @@ button, .button {
      color: var(--white);
      text-decoration: none;
      /* adds spacing to the button (this will be discussed more in-depth later */
-     padding: 10px;
      border-radius: 3px;
      /* gives the button a bottom border with a wideth of 2p x, a type of solid, and a color in RGBA format */
      border-bottom: 2px solid var(--black);
      transition-duration: 0.2s;
      transition-property: opacity;
+     padding: 10px;
+     margin-left: 390px;
+
 }
 
 button:hover, button:focus, .button:hover, .button:focus {
