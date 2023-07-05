@@ -91,6 +91,7 @@ main {
    font-weight: var(--font-size);
    padding: 20px;
 }
+
 a {
    font-family: var(--font-family);
    text-align: center;
